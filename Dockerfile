@@ -1,11 +1,8 @@
-# Google GTM Server Side official image
-FROM gcr.io/cloud-tagging-10302018/gtm-cloud-image:stable
-
-# Set working directory
-WORKDIR /app
+# Stape.io GTM Server Side (Working 2025)
+FROM stapeio/gtm-server:latest
 
 # Expose port
 EXPOSE 8080
 
-# Start GTM server
-CMD ["gtm-http-server"]
+# Start server
+CMD ["node", "server.js"]
